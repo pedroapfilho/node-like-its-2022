@@ -1,0 +1,156 @@
+import { awesomeTheme, Pacman, Profile } from "mdx-deck-theme-awesomeness";
+
+export const theme = awesomeTheme;
+
+<Header>
+
+<Profile name="Pedro Filho" twitter="pedroapfilho" />
+
+</Header>
+
+<Footer>
+
+<Pacman />
+
+</Footer>
+
+# Node like it's 2022
+
+---
+
+# Who am I?
+
+---
+
+# Pedro Filho
+
+## Software Engineer at Blockchain.com
+
+---
+
+# Node used to be challenging and fun
+
+### but now it's just fun 😄
+
+---
+
+## We had to use multiple methods to iterate over an object
+
+```js
+function getTotalScore(scores) {
+  var total = 0;
+
+  Object.keys(scores).forEach(function (key) {
+    total += scores[key];
+  });
+
+  return total;
+}
+```
+
+---
+
+## Now we can do it with a for...in
+
+```js
+const getTotalScore = (scores) => {
+  let total = 0;
+
+  for (const score in scores) {
+    total += scores[score];
+  }
+
+  return total;
+};
+```
+
+---
+
+## We had to concat strings to get a phrase with variables
+
+```js
+var firstName = "Bob";
+
+var lastName = "Smith";
+
+var intro = "Hey, my name is" + " " + firstName + " " + lastName;
+```
+
+---
+
+## Now we can just use template literals
+
+```js
+const firstName = "Bob";
+
+const lastName = "Smith";
+
+const name = `Hey, my name is ${firstName} ${lastName}`;
+```
+
+---
+
+## We had to use the hack to stringify and parse objects to clone them
+
+```js
+const a = { b: "something" };
+
+const b = JSON.parse(JSON.stringify(a));
+```
+
+---
+
+## Now, we just need to create a structuredClone
+
+```js
+const a = { b: "something" };
+
+const b = structuredClone(a);
+```
+
+---
+
+## What about default parameters?
+
+```js
+function(a, b) {
+  a = a || 1;
+  b = b || 2;
+
+  return a + b;
+}
+```
+
+---
+
+## Now it's as simple as
+
+```js
+function(a = 1, b = 2) {
+  return a + b;
+}
+```
+
+---
+
+## And don't get me started on async await, arrow functions, const and let...
+
+## ...and the rest of the things that I don't remember now, but are important
+
+---
+
+## So do a favor to everyone
+
+# Write node like it's 2022
+
+---
+
+## github.com/pedroapfilho
+
+## twitter.com/pedroapfilho
+
+---
+
+# That's all folks 👋
+
+## Hit me up with some questions!
